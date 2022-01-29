@@ -9,7 +9,7 @@ Therefore... You'll need to provide your own mongoDB connection string.
 ```
 npm install
 npm run frontend 
-node run backend 
+npm run backend 
 ```
 http://localhost:8080/
 ## Loggin and session!
