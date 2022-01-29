@@ -33,10 +33,12 @@ app.use("/api/products", productsRoutes);
 //Routes
 
 //Static Files
+const MONGODB_CONNECTION_STIRNG = ""
+
 
 //App Listening...
 mongoose
-  .connect("mongodb://challenge:challenge@vps.churrasco.digital:27017/challenge?authSource=admin")
+  .connect(MONGODB_CONNECTION_STIRNG)
   .then(() => app.listen(
     app.get("port"), () => {
       console.log("Server on port", `http://localhost:${app.get("port")}`);
